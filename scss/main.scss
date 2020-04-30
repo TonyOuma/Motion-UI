@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|RaleWay&display=swap");
+
+
+$fonts-stack : "Raleway",
+sans-serif;
+$primary-color: #f2f2f2;
+$secondary-color: #333;
+
+@mixin shadow {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: $fonts-stack;
+    color: $primary-color;
+}
+
+// header styling
+
+.main-header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    background-color: $secondary-color;
+    @include shadow;
+    z-index: 2;
+
+
+    .brand {
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 2rem;
+    }
+
+    .main-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 2rem;
+
+        .nav-link {
+            list-style-type: none;
+            padding: 1rem;
+            opacity: 1;
+
+
+            a {
+                text-decoration: none;
+                font-size: 1.3rem;
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+// end header styling
+
+// main section
+
+
+// end main section
